@@ -403,6 +403,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: _MainCamera
   m_TagString: MainCamera
@@ -475,6 +476,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54b4a74fe1036714ca9688963b29d73b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camZ: 0
 --- !u!1 &1038889827
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,6 +550,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c624dce56aff1b5428535576ba635fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabProjectile: {fileID: 5972837580417566505, guid: 748522967cba5d946b96bed6129bc8d6, type: 3}
+  velocityMult: 8
+  launchPoint: {fileID: 0}
+  launchPos: {x: 0, y: 0, z: 0}
+  projectile: {fileID: 0}
+  aimingMode: 0
 --- !u!1 &1231225512
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,6 +646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1884678640}
+  - component: {fileID: 1884678641}
   m_Layer: 0
   m_Name: LaunchPoint
   m_TagString: Untagged
@@ -647,6 +668,18 @@ Transform:
   m_Father: {fileID: 1038889829}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 15, z: 0}
+--- !u!122 &1884678641
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884678639}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4290756543
+  m_Size: 3
 --- !u!1 &1946164005
 GameObject:
   m_ObjectHideFlags: 0
